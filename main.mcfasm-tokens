@@ -1,0 +1,75 @@
+[Type]: float, int, short, double, byte, ?, null
+
+[Value] {
+    value: 3.2,
+    type [Type]: float,
+    id: 46b9dd2b0ba88d13233b
+}
+
+[Pointer] {
+    pointer: b8e9eb2ea203bdc970f50ae55428a9
+}
+
+[Storage]
+
+[Command] {
+    cmd: store,
+    data: { # returned object
+        name: hey,
+        value [Value|Pointer]: {
+            pointer: f722632cc77851cbdde2aaf0a3
+        }
+    },
+    tokens: {
+        [Value] {
+            value: 3,
+            type [Type]: int,
+            id: cd16cf86f3d122109e3b1
+        }
+
+        [Value] {
+            value: 1,
+            type [Type]: int,
+            id: 160ff118378f11f0477de055a81a9
+        }
+
+        [Operation] { 
+            lhs: cd16cf86f3d122109e3b1,
+            rhs: 160ff118378f11f0477de055a81a9,
+            output: e4e1b9a46cbe854713672f5caaae314e
+        }
+
+        [Value] {
+            value: 2,
+            type [Type]: int,
+            id: fb8e9eb2ea203bdc970f50ae5
+        }
+
+        [Operation] { 
+            lhs: e4e1b9a46cbe854713672f5caaae314e,
+            rhs: fb8e9eb2ea203bdc970f50ae5,
+            output: f722632cc77851cbdde2aaf0a3
+        }
+    }
+}
+
+[Command] {
+    cmd: teleport,
+    data: { # returned object
+        
+    },
+    tokens: {
+        [Value] {
+            value: 170.328398123,
+            type [Type]: float,
+            id: 0f50ae55428a91f7f53ac266b28419c377
+        }
+
+        [Position] {
+            x: [PositionComponent] {
+                relativity_type: 0 | 1 | 2,
+                value: 
+            }
+        }
+    }
+}
